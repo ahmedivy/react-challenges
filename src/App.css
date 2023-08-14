@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.array-container {
+  display: flex;
+  gap: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid #fff;
+}
+
+.array-box {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  border: 2px dashed white;
+  border-radius: 1px;
+}
+
+.add-cell {
+  width: 20px;
+}
+
+input {
+  text-decoration: none;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: large;
+}
+
+input:focus {
+  border: none;
+}
+
+.string {
+  font-size: 50px;
+  font-weight: 300;
+}
