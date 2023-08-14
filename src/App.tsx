@@ -24,29 +24,27 @@ function App() {
   };
 
   return (
-    <>
-      <div className="container">
-        <div className="array-container">
-          <span className="add-cell" onClick={() => addCell(0)}></span>
-          {cells.map((cell, index) => (
-            <>
-              <div className="array-box" key={index}>
-                <input
-                  value={cell}
-                  placeholder="_"
-                  onChange={(e) => changeInput(e.target.value, index)}
-                />
-              </div>
-              <span
-                className="add-cell"
-                onClick={() => addCell(index + 1)}
-              ></span>
-            </>
-          ))}
-        </div>
-        <p className="string">You entered: {cells.join("")}</p>
+    <main className="container">
+      <div className="array-container">
+        <span className="add-cell" onClick={() => addCell(0)}></span>
+        {cells.map((cell, index) => (
+          <div key={index} className="box-container">
+            <div className="array-box">
+              <input
+                value={cell}
+                placeholder="_"
+                onChange={(e) => changeInput(e.target.value, index)}
+              />
+            </div>
+            <span
+              className="add-cell"
+              onClick={() => addCell(index + 1)}
+            ></span>
+          </div>
+        ))}
       </div>
-    </>
+      <p className="string">You entered: {cells.join("")}</p>
+    </main>
   );
 }
 

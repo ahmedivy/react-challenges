@@ -20,6 +20,9 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border: 1px solid #fff;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: center;
 }
 
 .array-box {
@@ -36,6 +39,7 @@ body {
 
 .add-cell {
   width: 20px;
+  cursor: pointer;
 }
 
 input {
@@ -53,4 +57,11 @@ input:focus {
 .string {
   font-size: 50px;
   font-weight: 300;
+}
+
+.box-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0;
 }
